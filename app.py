@@ -3,7 +3,7 @@ import ollama
 import uuid
 
 # Set the page title
-st.set_page_config(page_title="Ollama Chat Interface")
+st.set_page_config(page_title="Ollama Chat")
 
 # Initialize session state for messages and chat history
 if "messages" not in st.session_state:
