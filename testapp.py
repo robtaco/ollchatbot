@@ -3,13 +3,14 @@ import ollama
 # Install Ollama on your Windows machine by following the instructions on the Ollama website: https://ollama.com/docs/install/windows
 
 # Run the Ollama client with the default URL and port (localhost:11434) on your Windows machine
-# Open a browser and go to http://localhost:11434 to access the Ollama web interface
-# If you see Ollama is running, you can proceed with the following code
-# If you don't see Ollama is running, you can try to run the following command in your terminal
+# Use this command in your terminal to start the Ollama client:
 # ollama run llama3.2
-# If you see Ollama is running, you can proceed with the following code:
+# Open a browser and go to http://localhost:11434 to access the Ollama web interface
+# If you see "Ollama is running", you can proceed with the following testapp.py code
+# If you don't see "Ollama is running", make sure it is running and you have installed it correctly.
 
-# excecute the following code in your terminal to run this test app:
+
+# Run the code in your terminal to test the connection to your local ollama model:
 # py .\testapp.py
 
 # Define the prompt
