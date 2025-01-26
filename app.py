@@ -13,9 +13,21 @@ if "chat_history" not in st.session_state:
 
 # Sidebar for model selection and chat history
 with st.sidebar:
+    # Display a GIF in the sidebar
+
+    # Tagline for the app
+    # URL of the GIF
+    gif_url = "https://i.makeagif.com/media/1-26-2025/hIx3id.gif"
+
+    # Display the GIF
+    st.image(gif_url)
+    st.markdown("*Keep your prompt data private and secure*")
+
+    # Model selection
+
     st.title("Model Selection")
     model = st.selectbox("Choose a model", ["llama3.2"])
-
+    
     st.title("Chat History")
     if st.session_state["chat_history"]:
         selected_chat = st.radio(
@@ -36,7 +48,8 @@ def generate_response(prompt):
     return response["message"]["content"]
 
 # Display chat messages
-st.title("Ollama Chat Interface")
+st.title("Ollama Chat")
+st.markdown("*Ollama Chat, powered by Ollama*")
 for message in st.session_state["messages"]:
     with st.chat_message(message["role"]):
         st.markdown(message["content"])
